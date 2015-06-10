@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Article</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+    </head>
+    <body>
+        <div class="add-body">
+            <form name="AddArticle" action="add">
+                <input type="hidden" name="command" value="add"/>
+                <input type="text" name="author" value=""/>
+                <input type="text" name="text" value=""/>
+                <input type="submit"/>
+            </form>
+        </div>
+        
+        <div class="delete-body">
+            <form action="delete">
+                <input type="hidden" name="command" value="add"/>
+                <input type="text" name="articleId" value=""/>
+                <input type="submit"/>
+            </form>
+        </div>
+        
+        <div class="edit-body">
+            <form action="edit">
+                <input type="hidden" name="command" value="edit"/>
+                <input type="text" name="articleId" value=""/>
+                <input type="text" name="author" value=""/>
+                <input type="text" name="text" value=""/>
+                <input type="submit"/>
+            </form>
+        </div>
+    </body>
+</html>
